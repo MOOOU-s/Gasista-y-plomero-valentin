@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<!-- saved from url=(0149)file:///C:/Users/M99/Desktop/SITIO%20WEB%20DE%20PRUEBA/Electricidad%20domiciliaria%20valentin/GASISTA%20CERTIFICADO%20Y%20PROMETO%20VALENTIN%202.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
+    <title>Valentín | Gasista Matriculado Camuzzi y Plomero en Miramar y Zona</title>
+    <meta name="description" content="Servicios de gasista matriculado certificado por Camuzzi y plomería en general por Valentín. Instalaciones de gas, planos, habilitaciones, calefacción, termotanques y sanitarios en Miramar y zona.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./GASISTA CERTIFICADO Y PROMETO VALENTIN 2_files/css2" rel="stylesheet">
+    
+    <!-- FontAwesome para Íconos -->
+    <link rel="stylesheet" href="./GASISTA CERTIFICADO Y PROMETO VALENTIN 2_files/all.min.css">
+
+    <style>
+        /* ==========================================================================
+           VARIABLES CSS REUTILIZABLES (PALETA GAS & PLOMERÍA + IDENTIDAD VALENTÍN)
+           ========================================================================== */
+        :root {
+            --color-primario: #15629a;     /* Azul Institucional del Logo Valentín */
+            --color-secundario: #0d4570;   /* Azul Profundo para contrastes y hover */
+            --color-celeste: #009fe3;      /* Celeste Camuzzi para detalles de matrícula */
+            --color-acento: #ec9731;       /* Naranja Llama / Acción */
+            --color-acento-hover: #d88320; 
+            --color-blanco: #ffffff;
+            --color-fondo: #f3f7fa;        
+            --color-texto: #1e293b;
+            --color-texto-suave: #5b677d;
+            
+            /* Tipografías */
+            --fuente-titulos: 'Montserrat', sans-serif;
+            --fuente-texto: 'Open Sans', sans-serif;
+            
+            /* Bordes y Sombras */
+            --border-radius: 8px;
+            --shadow-sm: 0 2px 6px rgba(13, 69, 112, 0.08);
+            --shadow-md: 0 6px 16px rgba(13, 69, 112, 0.14);
+            --shadow-lg: 0 12px 28px rgba(13, 69, 112, 0.22);
+            --transition: all 0.3s ease;
+        }
+
+        /* ==========================================================================
+           RESET & ESTILOS GENERALES
+           ========================================================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--fuente-texto);
+            color: var(--color-texto);
+            background-color: var(--color-fondo);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--fuente-titulos);
+            font-weight: 800;
+            line-height: 1.2;
+            color: var(--color-secundario);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 30px;
+            border-radius: var(--border-radius);
+            font-family: var(--fuente-titulos);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--color-acento);
+            color: var(--color-blanco);
+            box-shadow: 0 4px 14px rgba(236, 151, 49, 0.38);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-acento-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(236, 151, 49, 0.5);
+        }
+
+        .btn-azul {
+            background-color: var(--color-primario);
+            color: var(--color-blanco);
+        }
+
+        .btn-azul:hover {
+            background-color: var(--color-secundario);
+            transform: translateY(-2px);
+        }
+
+        .text-center { text-align: center; }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 7px 16px;
+            background-color: rgba(0, 159, 227, 0.12);
+            color: var(--color-secundario);
+            border: 1px solid rgba(0, 159, 227, 0.4);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .section-subtitle {
+            color: var(--color-texto-suave);
+            max-width: 650px;
+            margin: 0 auto 50px auto;
+            font-size: 1.05rem;
+        }
+
+        /* ==========================================================================
+           1. TOP BAR FINA
+           ========================================================================== */
+        .top-bar {
+            background-color: var(--color-secundario);
+            color: var(--color-blanco);
+            padding: 9px 0;
+            font-size: 0.85rem;
+            border-bottom: 3px solid var(--color-acento);
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .top-bar-info {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .top-bar-info i {
+            color: var(--color-acento);
+        }
+
+        .top-bar-actions {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .top-bar-link {
+            color: var(--color-blanco);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: var(--transition);
+        }
+
+        .top-bar-link i.fa-whatsapp {
+            color: #25D366;
+            font-size: 1rem;
+        }
+
+        .top-bar-link i.fa-instagram {
+            color: var(--color-acento);
+            font-size: 1rem;
+        }
+
+        .top-bar-link:hover {
+            color: var(--color-acento);
+        }
+
+        /* ==========================================================================
+           2. HEADER STICKY
+           ========================================================================== */
+        .main-header {
+            position: sticky;
+            top: 0;
+            background-color: var(--color-blanco);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+        }
+
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-brand-img {
+            height: 56px;
+            width: 56px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .logo-text {
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: var(--color-secundario);
+            text-transform: uppercase;
+            line-height: 1.1;
+        }
+
+        .logo-text span {
+            color: var(--color-primario);
+            display: block;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            list-style: none;
+        }
+
+        .nav-link {
+            font-family: var(--fuente-titulos);
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: var(--color-primario);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--color-acento);
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--color-secundario);
+            cursor: pointer;
+        }
+
+        /* ==========================================================================
+           3. HERO SECTION
+           ========================================================================== */
+        .hero {
+            padding: 75px 0;
+            background: linear-gradient(135deg, var(--color-blanco) 0%, #e4eef6 100%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-size: 2.8rem;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            color: var(--color-secundario);
+        }
+
+        .hero-title span {
+            color: var(--color-acento);
+        }
+
+        .hero-subtitle {
+            font-size: 1.12rem;
+            color: var(--color-texto-suave);
+            margin-bottom: 28px;
+        }
+
+        .camuzzi-cert-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background-color: var(--color-blanco);
+            padding: 12px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            border-left: 4px solid var(--color-celeste);
+            margin-bottom: 28px;
+        }
+
+        .camuzzi-logo-img {
+            width: 48px;
+            height: 48px;
+            border-radius: 6px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .camuzzi-cert-text strong {
+            display: block;
+            font-family: var(--fuente-titulos);
+            color: var(--color-secundario);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+        }
+
+        .camuzzi-cert-text span {
+            font-size: 0.85rem;
+            color: var(--color-texto-suave);
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+            border-bottom: 5px solid var(--color-acento);
+        }
+
+        /* ==========================================================================
+           4. SERVICIOS
+           ========================================================================== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 28px;
+            margin-bottom: 50px;
+        }
+
+        .service-card {
+            background-color: var(--color-blanco);
+            border-radius: var(--border-radius);
+            padding: 32px 28px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid #e2e8f0;
+            border-top: 4px solid var(--color-primario);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-top-color: var(--color-acento);
+        }
+
+        .service-icon {
+            width: 62px;
+            height: 62px;
+            background-color: rgba(21, 98, 154, 0.1);
+            color: var(--color-primario);
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-icon {
+            background-color: var(--color-acento);
+            color: var(--color-blanco);
+        }
+
+        .service-title {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+
+        .service-desc {
+            color: var(--color-texto-suave);
+            font-size: 0.95rem;
+        }
+
+        /* Banner Certificación Camuzzi */
+        .guarantee-banner {
+            background: linear-gradient(90deg, var(--color-secundario) 0%, var(--color-primario) 100%);
+            color: var(--color-blanco);
+            border-radius: var(--border-radius);
+            padding: 35px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            border-left: 6px solid var(--color-celeste);
+        }
+
+        .guarantee-banner-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            max-width: 720px;
+        }
+
+        .guarantee-camuzzi-badge {
+            width: 68px;
+            height: 68px;
+            border-radius: var(--border-radius);
+            object-fit: cover;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            flex-shrink: 0;
+        }
+
+        .guarantee-banner-text h3 {
+            color: var(--color-blanco);
+            font-size: 1.45rem;
+            margin-bottom: 6px;
+        }
+
+        .guarantee-banner-text p {
+            color: #e2e8f0;
+            font-size: 0.98rem;
+        }
+
+        /* ==========================================================================
+           5. GALERÍA DE TRABAJOS Y CONSEJOS (4 GRÁFICAS DE MARCA)
+           ========================================================================== */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            aspect-ratio: 4 / 5;
+            box-shadow: var(--shadow-md);
+            border: 2px solid #e2e8f0;
+            background-color: var(--color-secundario);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.04);
+        }
+
+        .gallery-actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+
+        /* ==========================================================================
+           6. SOBRE NOSOTROS (CON LOGO DE VALENTÍN)
+           ========================================================================== */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-brand-card {
+            background-color: var(--color-primario);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 5px solid var(--color-acento);
+        }
+
+        .about-brand-card img {
+            width: 100%;
+            max-width: 340px;
+            border-radius: var(--border-radius);
+        }
+
+        .about-content p {
+            margin-bottom: 15px;
+            color: var(--color-texto-suave);
+        }
+
+        .about-highlight {
+            font-weight: 700;
+            color: var(--color-secundario);
+            border-left: 4px solid var(--color-acento);
+            padding: 12px 15px;
+            background-color: rgba(236, 151, 49, 0.1);
+            margin: 20px 0;
+        }
+
+        /* ==========================================================================
+           7. POR QUÉ ELEGIRNOS
+           ========================================================================== */
+        .why-us {
+            background-color: #e4eef6;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-card {
+            background-color: var(--color-blanco);
+            padding: 30px 20px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border-bottom: 3px solid var(--color-primario);
+        }
+
+        .feature-icon {
+            font-size: 2.2rem;
+            color: var(--color-acento);
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-desc {
+            font-size: 0.9rem;
+            color: var(--color-texto-suave);
+        }
+
+        /* ==========================================================================
+           8. TESTIMONIOS
+           ========================================================================== */
+        .rating-summary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 0 auto 40px auto;
+            background-color: var(--color-blanco);
+            padding: 15px 30px;
+            border-radius: 50px;
+            width: fit-content;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #d5e3ef;
+        }
+
+        .stars {
+            color: var(--color-acento);
+            font-size: 1.2rem;
+        }
+
+        .rating-score {
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: var(--color-secundario);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .testimonial-card {
+            background-color: var(--color-blanco);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-bottom: 3px solid var(--color-primario);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--color-texto-suave);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .author-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: var(--color-primario);
+            color: var(--color-blanco);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-family: var(--fuente-titulos);
+        }
+
+        .author-info h4 {
+            font-size: 0.95rem;
+            margin-bottom: 2px;
+        }
+
+        .author-info span {
+            font-size: 0.8rem;
+            color: var(--color-texto-suave);
+        }
+
+        /* ==========================================================================
+           9. MAPA EMBEBIDO
+           ========================================================================== */
+        .map-section {
+            line-height: 0;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 360px;
+            border: 0;
+        }
+
+        /* ==========================================================================
+           10. BANNER CTA FINAL
+           ========================================================================== */
+        .final-cta {
+            background: linear-gradient(rgba(13, 69, 112, 0.92), rgba(21, 98, 154, 0.94)), url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--color-blanco);
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            color: var(--color-blanco);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .final-cta p {
+            font-size: 1.1rem;
+            color: #f1f5f9;
+            margin-bottom: 30px;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ==========================================================================
+           11. FOOTER
+           ========================================================================== */
+        .main-footer {
+            background-color: var(--color-secundario);
+            color: #dce8f2;
+            padding-top: 60px;
+            padding-bottom: 20px;
+            font-size: 0.9rem;
+            border-top: 4px solid var(--color-acento);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--color-blanco);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col p {
+            margin-bottom: 12px;
+        }
+
+        .footer-col i {
+            color: var(--color-acento);
+            margin-right: 6px;
+        }
+
+        .footer-cert {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 15px;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 10px 14px;
+            border-radius: var(--border-radius);
+        }
+
+        .footer-cert img {
+            width: 38px;
+            height: 38px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.15);
+            font-size: 0.85rem;
+        }
+
+        /* ==========================================================================
+           12. BOTÓN FLOTANTE WHATSAPP CON BURBUJA
+           ========================================================================== */
+        .whatsapp-float-container {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .whatsapp-chat-bubble {
+            background-color: var(--color-blanco);
+            padding: 12px 18px;
+            border-radius: 18px;
+            border-bottom-right-radius: 4px;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+            color: var(--color-secundario);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 2px solid var(--color-acento);
+            animation: pulse-bubble 3s infinite;
+            position: relative;
+        }
+
+        .whatsapp-btn-float {
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: var(--color-blanco);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.45);
+            transition: var(--transition);
+        }
+
+        .whatsapp-btn-float:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes pulse-bubble {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        /* ==========================================================================
+           RESPONSIVE DESIGN
+           ========================================================================== */
+        @media (max-width: 992px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-grid, .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-title {
+                font-size: 2.1rem;
+            }
+
+            .hero-image {
+                height: 300px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .nav-menu {
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: var(--color-blanco);
+                flex-direction: column;
+                padding: 20px 0;
+                box-shadow: var(--shadow-md);
+                display: none;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .top-bar .container {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .guarantee-banner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .guarantee-banner-left {
+                flex-direction: column;
+            }
+
+            .whatsapp-chat-bubble {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. TOP BAR FINA -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-info">
+                <span><i class="fa-solid fa-fire-flame-curved"></i> Gasista Matriculado Camuzzi &amp; Plomero</span>
+                <span><i class="fa-solid fa-location-dot"></i> Miramar y Zona</span>
+            </div>
+            <div class="top-bar-actions">
+                <a href="https://www.instagram.com/valentinalejobustos/" target="_blank" rel="noopener noreferrer" class="top-bar-link" aria-label="Instagram de Valentín">
+                    <i class="fa-brands fa-instagram"></i> @valentinalejobustos
+                </a>
+                <a href="https://wa.me/5492291418234?text=Hola%20Valent%C3%ADn,%20necesito%20consultar%20por%20un%20trabajo%20de%20gas%20o%20plomer%C3%ADa" target="_blank" class="top-bar-link">
+                    <i class="fa-brands fa-whatsapp"></i> 2291 41-8234
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. HEADER STICKY -->
+    <header class="main-header">
+        <div class="container">
+            <a href="file:///C:/Users/M99/Desktop/SITIO%20WEB%20DE%20PRUEBA/Electricidad%20domiciliaria%20valentin/GASISTA%20CERTIFICADO%20Y%20PROMETO%20VALENTIN%202.html#inicio" class="logo-container">
+                <img src="file:///C:/Users/M99/Desktop/SITIO%20WEB%20DE%20PRUEBA/Electricidad%20domiciliaria%20valentin/image_c17e65.jpg" alt="Logo Valentín Gasista &amp; Plomero" class="logo-brand-img" onerror="this.style.display='none'" style="display: none;">
+                <div class="logo-text">
+                    Valentín
+                    <span>Gasista &amp; Plomero</span>
+                </div>
+            </a>
+            
+            <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú de navegación">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="file:///C:/Users/M99/Desktop/SITIO%20WEB%20DE%20PRUEBA/Electricidad%20domiciliaria%20valentin/GASISTA%20CERTIFICADO%20Y%20PROMETO%20VALENTIN%202.html#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="file:///C:/Users/M99/Desktop/SITIO%20WEB%20DE%20PRUEBA/Electricidad%20domiciliaria%20valentin/GASISTA%20CERTIFICADO%20Y%20PROMETO%20VALENTIN%202.html#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="file:///C:/Users/M99/Desktop/SITIO%20WEB%20DE%20PRUEBA/Electricidad%20domiciliaria%20valentin/GASISTA%20CERTIFICADO%20Y%20PROMETO%20VALENTIN%202.html#galeria" class="nav-link">Trabajos</a></li>
+                <li><a href="file:///C:/Users/M99/Desktop/SITIO%20WEB%20DE%20PRUEBA/Electricidad%20domiciliaria%20valentin/GASISTA%20CERTIFICADO%20Y%20PROMETO%20VALENTIN%202.html#sobre-nosotros" class="nav-link">Sobre Mí</a></li>
+                <li><a href="file:///C:/Users/M99/Desktop/SITIO%20WEB%20DE%20PRUEBA/Electricidad%20domiciliaria%20valentin/GASISTA%20CERTIFICADO%20Y%20PROMETO%20VALENTIN%202.html#por-que-elegirnos" class="nav-link">Por qué elegirme</a></li>
+                <li><a href="file:///C:/Users/M99/Desktop/SITIO%20WEB%20DE%20PRUEBA/Electricidad%20domiciliaria%20valentin/GASISTA%20CERTIFICADO%20Y%20PROMETO%20VALENTIN%202.html#testimonios" class="nav-link">Opiniones</a></li>
+                <li><a href="file:///C:/Users/M99/Desktop/SITIO%20WEB%20DE%20PRUEBA/Electricidad%20domiciliaria%20valentin/GASISTA%20CERTIFICADO%20Y%20PROMETO%20VALENTIN%202.html#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge">
+                        <i class="fa-solid fa-certificate"></i> Gasista Matriculado • Certificado Camuzzi
+                    </div>
+                    <h1 class="hero-title">
+                        Gasista &amp; <span>Plomero</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Instalaciones de gas reglamentarias, habilitaciones, calefacción y plomería integral para tu hogar o comercio. Trabajos seguros, prolijos y garantizados por <strong>Valentín</strong>.
+                    </p>
+
+                    <!-- Sello de Certificación Camuzzi -->
+                    <div class="camuzzi-cert-box">
+                        <img src="file:///C:/Users/M99/Desktop/SITIO%20WEB%20DE%20PRUEBA/Electricidad%20domiciliaria%20valentin/image_c18567.png" alt="Logo Camuzzi Gas" class="camuzzi-logo-img" onerror="this.style.display='none'" style="display: none;">
+                        <div class="camuzzi-cert-text">
+                            <strong>Certificado por Camuzzi Gas</strong>
+                            <span>Trámites, planos, inspecciones y rehabilitaciones oficiales.</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5492291418234?text=Hola%20Valent%C3%ADn,%20quiero%20pedir%20un%20presupuesto%20de%20gas%20o%20plomer%C3%ADa" target="_blank" class="btn btn-primary">
+                            <i class="fa-brands fa-whatsapp"></i> Pedir Presupuesto
+                        </a>
+                        <a href="file:///C:/Users/M99/Desktop/SITIO%20WEB%20DE%20PRUEBA/Electricidad%20domiciliaria%20valentin/GASISTA%20CERTIFICADO%20Y%20PROMETO%20VALENTIN%202.html#servicios" class="btn btn-azul">Ver Servicios</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="./GASISTA CERTIFICADO Y PROMETO VALENTIN 2_files/photo-1585704032915-c3400ca199e7" alt="Instalación profesional de cañerías de gas y plomería" class="hero-image" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SERVICIOS -->
+    <section id="servicios" class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Servicios de Gas y Plomería</h2>
+                <p class="section-subtitle">Soluciones integrales bajo normativa vigente para obra nueva, refacciones, habilitaciones y urgencias domiciliarias.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Servicio 1: Gas Matriculado -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                    <h3 class="service-title">Instalaciones de Gas</h3>
+                    <p class="service-desc">Tendido de cañerías en termofusión (Sigas) y epoxi. Colocación y regulación de cocinas, calefactores, hornos, estufas tiro balanceado y detección de pérdidas.</p>
+                </div>
+                <!-- Servicio 2: Trámites y Habilitaciones Camuzzi -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-file-signature"></i></div>
+                    <h3 class="service-title">Habilitaciones Camuzzi</h3>
+                    <p class="service-desc">Confección y presentación de planos, pedidos de medidor, rehabilitaciones por corte de suministro, pruebas de hermeticidad y adecuación a normativa vigente.</p>
+                </div>
+                <!-- Servicio 3: Plomería General -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-faucet-drip"></i></div>
+                    <h3 class="service-title">Plomería y Sanitarios</h3>
+                    <p class="service-desc">Instalación y reparación de redes de agua fría y caliente, desagües cloacales y pluviales, colocación de griferías, sanitarios, tanques de agua y bombas presurizadoras.</p>
+                </div>
+                <!-- Servicio 4: Agua Caliente y Calefacción -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-temperature-high"></i></div>
+                    <h3 class="service-title">Termotanques y Calderas</h3>
+                    <p class="service-desc">Instalación, recambio y mantenimiento de termotanques a gas o eléctricos, calefones, calderas y circuitos de calefacción por radiadores o piso radiante.</p>
+                </div>
+            </div>
+
+            <!-- Banner de Certificación Camuzzi -->
+            <div class="guarantee-banner">
+                <div class="guarantee-banner-left">
+                    <img src="file:///C:/Users/M99/Desktop/SITIO%20WEB%20DE%20PRUEBA/Electricidad%20domiciliaria%20valentin/image_c18567.png" alt="Certificación Camuzzi" class="guarantee-camuzzi-badge" onerror="this.style.display='none'" style="display: none;">
+                    <div class="guarantee-banner-text">
+                        <h3>Gasista Matriculado Certificado por Camuzzi</h3>
+                        <p>Todas las instalaciones de gas se ejecutan cumpliendo estrictamente las normas de seguridad (NAG-200) para proteger a tu familia y aprobar inspecciones sin demoras.</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/5492291418234?text=Hola%20Valent%C3%ADn,%20necesito%20asesoramiento%20por%20una%20instalaci%C3%B3n%20o%20tr%C3%A1mite%20de%20gas" target="_blank" class="btn btn-primary">Consultar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. GALERÍA DE TRABAJOS Y RECOMENDACIONES (4 IMÁGENES ENVIADAS) -->
+    <section id="galeria" class="section-padding" style="background-color: var(--color-blanco);">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Trabajos y Consejos Técnicos</h2>
+                <p class="section-subtitle">Soluciones reales para problemas de presión de agua, calefones, pérdidas e instalaciones seguras de gas y plomería.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./GASISTA CERTIFICADO Y PROMETO VALENTIN 2_files/valentinalejobustos_1750190467_3657185164975759016_3585584885.jpg" alt="¿Tenés poca presión de agua en la ducha? - Valentín Gasista y Plomero" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./GASISTA CERTIFICADO Y PROMETO VALENTIN 2_files/valentinalejobustos_1754428927_3692739946444248004_3585584885.jpg" alt="Detrás de cada instalación que funciona bien, hay técnica y seguridad - Gasista y Plomero Matriculado" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./GASISTA CERTIFICADO Y PROMETO VALENTIN 2_files/valentinalejobustos_1755117010_3698511998886106379_3585584885.jpg" alt="Tip de plomería: pérdida de presión en agua caliente y revisión de calefón" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./GASISTA CERTIFICADO Y PROMETO VALENTIN 2_files/valentinalejobustos_1757450398_3718085882663841128_3585584885.jpg" alt="Consejo de ahorro: reparación de grifos que gotean" loading="lazy">
+                </div>
+            </div>
+
+            <div class="gallery-actions">
+                <a href="https://wa.me/5492291418234?text=Hola%20Valent%C3%ADn,%20vi%20tu%20p%C3%A1gina%20y%20quiero%20coordinar%20una%20visita" target="_blank" class="btn btn-azul">
+                    <i class="fa-brands fa-whatsapp"></i> Coordinar Visita Técnica
+                </a>
+                <a href="https://www.instagram.com/valentinalejobustos/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <i class="fa-brands fa-instagram"></i> Ver Más en Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SOBRE NOSOTROS (CON EL LOGO DE VALENTÍN) -->
+    <section id="sobre-nosotros" class="section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-brand-card">
+                    <img src="./GASISTA CERTIFICADO Y PROMETO VALENTIN 2_files/503302760_18397661701112886_4550828494027095466_n.jpg" alt="Valentín Gasista &amp; Plomero">
+                </div>
+                <div class="about-content">
+                    <div class="badge"><i class="fa-solid fa-user-gear"></i> Atención Directa y Matriculada</div>
+                    <h2 class="section-title">Sobre Mí</h2>
+                    <p>Soy <strong>Valentín</strong>, <strong>Gasista Matriculado (certificado por Camuzzi) y Plomero</strong> en Miramar y la zona. Brindo un servicio integral enfocado en ofrecer soluciones duraderas, seguras y prolijas para cada hogar o comercio.</p>
+                    
+                    <div class="about-highlight">
+                        "Con el gas y el agua no se improvisa: cada unión, ventilación y cañería se realiza bajo norma para garantizar la tranquilidad de tu familia y evitar pérdidas futuras."
+                    </div>
+
+                    <p>Ya sea que necesites habilitar el servicio de gas ante Camuzzi, instalar o reparar un calefón o termotanque, mejorar la presión de agua de tu vivienda o resolver una urgencia, te asesoro con claridad desde el primer contacto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. POR QUÉ ELEGIRNOS -->
+    <section id="por-que-elegirnos" class="section-padding why-us">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Por Qué Elegirme</h2>
+                <p class="section-subtitle">Respaldo matriculado, responsabilidad y trabajo bien hecho en cada visita.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <h3 class="feature-title">Certificado Camuzzi</h3>
+                    <p class="feature-desc">Matrícula habilitante para firma de planos, habilitaciones e inspecciones oficiales.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                    <h3 class="feature-title">Prolijidad Total</h3>
+                    <p class="feature-desc">Termofusión precisa, ventilaciones reglamentarias y terminaciones limpias en cada ambiente.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3 class="feature-title">Respuesta Rápida</h3>
+                    <p class="feature-desc">Atención ágil por WhatsApp para coordinar visitas y resolver pérdidas o urgencias.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h3 class="feature-title">Presupuesto Claro</h3>
+                    <p class="feature-desc">Asesoramiento honesto sobre materiales aprobados y costos antes de iniciar el trabajo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. TESTIMONIOS -->
+    <section id="testimonios" class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Opiniones de Clientes</h2>
+                <p class="section-subtitle">La confianza de los vecinos de Miramar que ya realizaron sus trabajos de gas y plomería con Valentín.</p>
+            </div>
+
+            <div class="rating-summary">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating-score">5.0 / 5.0</div>
+                <span style="color: var(--color-texto-suave); font-size: 0.9rem;">(Clientes satisfechos)</span>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Me hizo toda la instalación de gas nueva y gestionó la inspección de Camuzzi sin ningún problema. Súper prolijo, puntual y cumple con todo lo que dice."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CR</div>
+                        <div class="author-info">
+                            <h4>Carlos R.</h4>
+                            <span>Habilitación de Gas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Cambiamos el termotanque y renovamos la cañería de agua del baño. Trabajó rápido, dejó todo impecable y con materiales de primera calidad."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SL</div>
+                        <div class="author-info">
+                            <h4>Silvina L.</h4>
+                            <span>Plomería y Termotanque</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Excelente atención. Tenía una pérdida en un calefactor y vino enseguida a revisarlo y dejarlo funcionando seguro. Totalmente recomendable."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JM</div>
+                        <div class="author-info">
+                            <h4>Jorge M.</h4>
+                            <span>Reparación de Gas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. MAPA EMBEBIDO -->
+    <section class="map-section" id="ubicacion">
+        <iframe class="map-container" src="./GASISTA CERTIFICADO Y PROMETO VALENTIN 2_files/embed.html" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Zona de cobertura Valentín Gasista y Plomero">
+        </iframe>
+    </section>
+
+    <!-- 10. BANNER CTA FINAL -->
+    <section id="contacto" class="section-padding final-cta">
+        <div class="container">
+            <h2>¿Necesitás un Gasista Matriculado o Plomero?</h2>
+            <p>Escribime por WhatsApp para asesorarte sobre instalaciones de gas, habilitaciones Camuzzi, termotanques o arreglos de plomería en tu hogar.</p>
+            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <a href="https://wa.me/5492291418234?text=Hola%20Valent%C3%ADn,%20necesito%20hacerte%20una%20consulta%20por%20un%20trabajo%20de%20gas%20o%20plomer%C3%ADa" target="_blank" class="btn btn-primary" style="font-size: 1.05rem; padding: 18px 34px;">
+                    <i class="fa-brands fa-whatsapp"></i> Contactar a Valentín (2291 41-8234)
+                </a>
+                <a href="https://www.instagram.com/valentinalejobustos/" target="_blank" rel="noopener noreferrer" class="btn btn-azul" style="font-size: 1.05rem; padding: 18px 30px; border: 1px solid rgba(255,255,255,0.25);">
+                    <i class="fa-brands fa-instagram"></i> Seguir en Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Valentín | Gasista &amp; Plomero</h4>
+                    <p>Servicios integrales de gas natural y envasado, habilitaciones oficiales y plomería domiciliaria en general.</p>
+                    <div class="footer-cert">
+                        <img src="file:///C:/Users/M99/Desktop/SITIO%20WEB%20DE%20PRUEBA/Electricidad%20domiciliaria%20valentin/image_c18567.png" alt="Camuzzi Gas" onerror="this.style.display='none'" style="display: none;">
+                        <span><strong>Matriculado Camuzzi</strong><br>Instalaciones bajo normativa</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios Principales</h4>
+                    <p><i class="fa-solid fa-check"></i> Instalaciones de gas y termofusión</p>
+                    <p><i class="fa-solid fa-check"></i> Planos y habilitaciones Camuzzi</p>
+                    <p><i class="fa-solid fa-check"></i> Termotanques, calefones y estufas</p>
+                    <p><i class="fa-solid fa-check"></i> Plomería, agua, cloacas y sanitarios</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto y Redes</h4>
+                    <p><i class="fa-brands fa-whatsapp"></i> WhatsApp: 2291 41-8234</p>
+                    <p><i class="fa-solid fa-phone"></i> Teléfono: (02291) 41-8234</p>
+                    <p>
+                        <a href="https://www.instagram.com/valentinalejobustos/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">
+                            <i class="fa-brands fa-instagram"></i> @valentinalejobustos
+                        </a>
+                    </p>
+                    <p><i class="fa-solid fa-location-dot"></i> Miramar y zona de influencia</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="year">2026</span> Valentín - Gasista Matriculado &amp; Plomero. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 12. BOTÓN FLOTANTE WHATSAPP CON BURBUJA -->
+    <div class="whatsapp-float-container">
+        <div class="whatsapp-chat-bubble">
+            <i class="fa-solid fa-fire-flame-curved" style="color: var(--color-acento);"></i> ¡Hola! ¿Necesitás presupuesto de gas o plomería?
+        </div>
+        <a href="https://wa.me/5492291418234?text=Hola%20Valent%C3%ADn,%20quiero%20consultar%20por%20un%20servicio%20de%20gas%20o%20plomer%C3%ADa" target="_blank" class="whatsapp-btn-float" aria-label="Contactar a Valentín por WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT VANILLA -->
+    <script>
+        // Año dinámico en footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Menú Mobile Toggle
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = hamburgerBtn.querySelector('i');
+            if(navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Cerrar menú mobile al hacer click en un enlace
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = hamburgerBtn.querySelector('i');
+                if(icon) {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+    </script>
+
+</body></html>
